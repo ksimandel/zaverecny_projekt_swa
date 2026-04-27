@@ -1,8 +1,8 @@
 # SWA ZÁVĚREČNÝ PROJEKT
 ## Téma: Rain World
 
-Home
-Podstránky:
+### Home
+### Podstránky:
 ─ O hře
 ─ Příběh
 ─ Postavy
