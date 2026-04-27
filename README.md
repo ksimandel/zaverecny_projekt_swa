@@ -2,13 +2,14 @@
 ## Téma: Rain World
 
 Home
-├── O hře
-├── Příběh
-├── Postavy
-├── Nepřátelé
-├── Lokace
-├── Mechaniky
-├── Tipy
-├── Strategie
-├── Soundtrack
-└── DLC
+Podstránky:
+─ O hře
+─ Příběh
+─ Postavy
+─ Nepřátelé
+─ Lokace
+─ Mechaniky
+─ Tipy
+─ Strategie
+─ Soundtrack
+─ DLC
