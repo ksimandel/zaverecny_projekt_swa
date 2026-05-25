@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indie Games Indieler (Indie+dealer)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="/0. Home/index.html">Home</a>
+        <a href="/1. Games/index.html">Games</a>
+        <a href="#o_nas">About Us</a>
+        <a href="#kontakt">Contact Us</a>
+        <div id="icon_con" >
+            <a href="/0. Home/index.html"><img src="/Images/skateboarding-01.png" alt="Indieler"></a>
+            <a id="icon_text" href="/0. Home/index.html">INDIELER</a>
+        </div>
+    </header>
+
+    <div id="video_introduction">
+        <div class="hero">
+            <div class="video-container">
+                <video class="bg-video active" autoplay muted loop src="/Videos/UNDERTALE Release Trailer.mp4"></video>
+                <video class="bg-video" autoplay muted loop src="/Videos/Hollow Knight - Release Trailer - Team Cherry (1080p, h264).mp4"></video>
+                <video class="bg-video" autoplay muted loop src="/Videos/ULTRAKILL： The ULTRA_REVAMP Update.mp4"></video>
+                <video class="bg-video" autoplay muted loop src="/Videos/OneShot Trailer.mp4"></video>
+                <video class="bg-video" autoplay muted loop src="/Videos/Terraria Official Trailer.mp4"></video>
+                <video class="bg-video" autoplay muted loop src="/Videos/Stick Fight： The Game - Release Trailer.mp4"></video>
+            </div>
+            <div class="overlay">
+                <h1>WELCOME TO INDIELER</h1>
+              <p>Let's go find your game.</p>
+            </div>
+          
+        </div>
+    </div>
+    <div id="o_nas">
+        <article>
+            <h1>ABOUT US</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus distinctio pariatur, voluptatum consequatur, minima, quasi vero quisquam tenetur dolor quae obcaecati! Corporis fugiat, quibusdam dicta ratione ullam error voluptas cum?</p>
+        </article>
+    </div>
+    <div id="kontakt">
+
+    </div>
+
+
+<footer>
+    <p>made by krystof</p>
+
+</footer>
+
+<script>
+const videos = document.querySelectorAll(".bg-video");
+
+let current = 0;
+
+setInterval(() => {
+  videos[current].classList.remove("active");
+
+  current = (current + 1) % videos.length;
+
+  videos[current].classList.add("active");
+}, 8000);
+
+</script>
+</body>
+</html>

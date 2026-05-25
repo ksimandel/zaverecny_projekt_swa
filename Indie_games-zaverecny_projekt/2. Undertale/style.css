@@ -1,0 +1,148 @@
+:root{
+    --maintextcolor:rgb(220, 220, 220);
+    --maintextfont:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(10, 10, 10);
+    height: auto;
+
+  }
+
+  header{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(51, 51, 51);
+    gap: 20px;
+    padding-left: 20px;
+  }
+  
+  header a{
+    color: var(--maintextcolor);
+    font-family:var(--maintextfont);
+    text-decoration: none;
+    font-weight: bolder;
+  }
+  
+  header a:hover{
+    scale: 110%;
+    color: var(--maintextcolor);
+    transition: ease-in-out;
+    transition-duration: 0.1s;
+  }
+  
+  header:hover a:not(:hover){
+    scale: 100%;
+    color: rgb(120, 120, 120);
+    transition: ease-in-out;
+    transition-duration: 0.1s;
+  }
+
+  #icon_con{
+    height: 80px;
+    width: auto;
+    position: absolute;
+    left: 45%;
+    display: flex;
+    flex-direction: column;
+  
+  }
+  #icon_con img{
+    height: 80px;
+    width: auto;
+  }
+  
+  #icon_con:hover{
+    scale: 120%;
+    transition: ease-in-out;
+    transition-duration: 0.1s;
+  }
+  #icon_text{
+    color: var(--maintextcolor);
+    margin-left:50px;
+    margin-top: -17px;
+  }
+  
+  #icon_con a:hover{
+    color: var(--maintextcolor);
+  }
+
+  h1{
+    font-family: "Tiny5", sans-serif;
+    color: var(--maintextcolor);
+    font-size: 150px;
+  }
+
+   #nadpis{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(25, 25, 25);
+   }
+
+   #information{
+    width: 25%;
+    color: var(--maintextcolor);
+    font-family: var(--maintextfont);
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+   }
+
+   #information div{
+    display: flex;
+    flex-direction: row;
+    font-family: var(--maintextfont);
+    gap: 40px;
+    font-size: 20px;
+    align-items: center;
+   }
+
+   #content{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-color: rgb(10, 10, 10);
+   }
+
+   #hodnoceni{
+    color: var(--maintextcolor);
+    font-family: var(--maintextfont);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35%;
+
+   }
+
+   #hodnoceni div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+   }
+
+   #hodnoceni span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    justify-content: center;
+   }
+
+   #hodnoceni h2{
+    font-size: 35px;
+   }
+
+   #hodnoceni h3{
+    margin-left: 50px;
+   }
+
+   #hodnoceni p{
+    font-size: 25px;
+    align-items: center;
+   }
