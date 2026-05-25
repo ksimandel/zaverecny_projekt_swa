@@ -1,15 +1,12 @@
 # SWA ZÁVĚREČNÝ PROJEKT
-## Téma: Rain World
+## Téma: Indie Games
 
 ### Home
-### Podstránky:
-─ O hře
-─ Příběh
-─ Postavy
-─ Nepřátelé
-─ Lokace
-─ Mechaniky
-─ Tipy
-─ Strategie
-─ Soundtrack
-─ DLC
+### Games:
+Undertale
+Hollow Knight
+OneShot
+Terraria
+StickFight
+Ultrakill
+
