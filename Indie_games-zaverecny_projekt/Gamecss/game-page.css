@@ -1,0 +1,262 @@
+/* ==========================================================================
+   1. YOUR ORIGINAL HOMEPAGE STYLES (Header, Footer & Global)
+   ========================================================================== */
+:root {
+  --maintextcolor: rgb(220, 220, 220);
+  --maintextfont: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(25, 25, 25);
+  height: auto;
+}
+
+header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(51, 51, 51);
+  gap: 20px;
+  padding-left: 20px;
+}
+
+header a {
+  color: var(--maintextcolor);
+  font-family: var(--maintextfont);
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+header a:hover {
+  scale: 110%;
+  color: var(--maintextcolor);
+  transition: ease-in-out;
+  transition-duration: 0.1s;
+}
+
+header:hover a:not(:hover) {
+  scale: 100%;
+  color: rgb(120, 120, 120);
+  transition: ease-in-out;
+  transition-duration: 0.1s;
+}
+
+#icon_con {
+  height: 80px;
+  width: auto;
+  position: absolute;
+  left: 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+#icon_con img {
+  height: 80px;
+  width: auto;
+}
+
+#icon_con:hover {
+  scale: 120%;
+  transition: ease-in-out;
+  transition-duration: 0.1s;
+}
+
+#icon_text {
+  color: var(--maintextcolor);
+  margin-left: 50px;
+  margin-top: -17px;
+}
+
+#icon_con a:hover {
+  color: var(--maintextcolor);
+}
+
+footer {
+  background-color: rgb(51, 51, 51);
+  height: 50px;
+  color: var(--maintextcolor);
+  font-family: var(--maintextfont);
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Balanced text centering */
+}
+
+
+/* ==========================================================================
+   2. INDIVIDUAL GAME PAGE LAYOUT STYLES
+   ========================================================================== */
+
+/* --- Game Page Hero Section --- */
+.game-hero {
+  position: relative;
+  width: 100%;
+  height: 65vh;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Background Video styling if you decide to add background mp4 loops */
+.hero-video {
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.game-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(25, 25, 25, 0.2), rgb(25, 25, 25));
+  display: flex;
+  align-items: flex-end;
+  padding: 40px;
+  z-index: 1;
+}
+
+.game-hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  font-family: var(--maintextfont);
+  color: var(--maintextcolor);
+}
+
+.game-badge {
+  background-color: var(--accent-color, #ff4757);
+  color: #fff;
+  padding: 5px 12px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+
+.game-title {
+  font-size: 3.5rem;
+  margin: 15px 0 10px 0;
+  color: #ffffff;
+  text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.9);
+}
+
+.game-tagline {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  max-width: 800px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+}
+
+/* --- Main Structure Grid --- */
+.game-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+}
+
+.game-main-content {
+  color: var(--maintextcolor);
+  font-family: var(--maintextfont);
+}
+
+.game-description h2, 
+.game-media h2 {
+  font-size: 1.8rem;
+  border-bottom: 2px solid rgb(51, 51, 51);
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.game-description p {
+  line-height: 1.7;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+/* --- Media Grid (Screenshots) --- */
+.media-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.media-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+/* --- Sticky Sidebar Card --- */
+.game-sidebar { 
+  font-family: var(--maintextfont); 
+}
+
+.sidebar-card {
+  background-color: rgb(35, 35, 35);
+  border: 1px solid rgb(51, 51, 51);
+  border-radius: 8px;
+  padding: 25px;
+  position: sticky;
+  top: 20px;
+  color: #ffffff; 
+}
+
+.sidebar-card h3 { 
+  color: #ffffff; 
+  margin-top: 0; 
+}
+
+.info-list { 
+  list-style: none; 
+  padding: 0; 
+  margin: 0; 
+}
+
+.info-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid rgb(51, 51, 51);
+}
+
+.info-list li strong { 
+  color: rgb(160, 160, 160); 
+}
+
+/* --- Dynamic Buy Button --- */
+.buy-button {
+  display: block;
+  text-align: center;
+  background-color: var(--accent-color, #ff4757);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 15px;
+  margin-top: 25px;
+  border-radius: 6px;
+  transition: transform 0.1s, filter 0.2s;
+}
+
+.buy-button:hover { 
+  filter: brightness(1.2); 
+  transform: translateY(-2px); 
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+  .game-container { 
+    grid-template-columns: 1fr; 
+  }
+  .media-grid { 
+    grid-template-columns: 1fr; 
+  }
+}

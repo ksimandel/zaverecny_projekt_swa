@@ -1,0 +1,117 @@
+:root{
+    --maintextcolor:rgb(220, 220, 220);
+    --maintextfont:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(25, 25, 25);
+    height: auto;
+  }
+  
+  header{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(51, 51, 51);
+    gap: 20px;
+    padding-left: 20px;
+  }
+  
+  header a{
+    color: var(--maintextcolor);
+    font-family:var(--maintextfont);
+    text-decoration: none;
+    font-weight: bolder;
+  }
+  
+  header a:hover{
+    scale: 110%;
+    color: var(--maintextcolor);
+    transition: ease-in-out;
+    transition-duration: 0.1s;
+  }
+  
+  header:hover a:not(:hover){
+    scale: 100%;
+    color: rgb(120, 120, 120);
+    transition: ease-in-out;
+    transition-duration: 0.1s;
+  }
+  
+  #icon_con{
+    height: 80px;
+    width: auto;
+    position: absolute;
+    left: 45%;
+    display: flex;
+    flex-direction: column;
+  
+  }
+  #icon_con img{
+    height: 80px;
+    width: auto;
+  }
+  
+  #icon_con:hover{
+    scale: 120%;
+    transition: ease-in-out;
+    transition-duration: 0.1s;
+  }
+  #icon_text{
+    color: var(--maintextcolor);
+    margin-left:50px;
+    margin-top: -17px;
+  }
+  
+  #icon_con a:hover{
+    color: var(--maintextcolor);
+  }
+  
+
+#content{
+    height: 795px;
+    padding: 100px 200px;
+    color: var(--maintextcolor);
+    font-family: var(--maintextfont);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 100px;
+    
+}
+
+#content a img{
+    height: 200px;
+    width: 200px;
+    
+}
+
+#content span{
+display: flex;
+flex-direction: column;
+align-items: center;
+height: fit-content;
+border: none;
+}
+
+#content span:hover{
+scale: 110%;
+transition: ease-in-out;
+transition-duration: 0.1s;
+}
+
+
+
+
+
+
+  footer{
+    background-color: rgb(51, 51, 51);
+    height: 50px;
+    color: var(--maintextcolor);
+    font-family: var(--maintextfont);
+    display: flex ;
+    justify-content: center;
+  }
